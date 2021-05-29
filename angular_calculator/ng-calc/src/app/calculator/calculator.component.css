@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 5px;
+    text-align: center;
+  }
+
+  .calc {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .calculator {
+    width: 350px;
+    height: 400px;
+    background-color: #c0c0c0;
+    border: 2px solid blue;
+  }
+  
+  #display {
+    width: 320px;
+    height: 40px;
+    text-align: right;
+    background-color: white;
+    border: 3px solid black;
+    font-size: 18px;
+    left: 2px;
+    top: 2px;
+    color: black;
+  }
+
+  .btnTop{
+    color:brown;
+    background-color: lightgrey;
+    font-size: 14px;
+    margin: auto;
+    width: 50px;
+    height: 35px;
+  }
+
+  .brand{
+    color: silver;
+    background-color:black;
+    font-size: 14px;
+    margin: auto;
+    width: 75px;
+    height: 35px;
+  }
+
+  .btnNo {
+    color:green;
+    background-color: black;
+    font-size: 14px;
+    margin: auto;
+    width: 50px;
+    height: 35px;
+  }
+
+  .math {
+    color: white;
+    background-color: lightseagreen;
+    font-size: 14px;
+    margin: auto;
+    width: 50px;
+    height: 35px;
+  }

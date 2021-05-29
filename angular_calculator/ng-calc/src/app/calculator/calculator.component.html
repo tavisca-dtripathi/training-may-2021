@@ -1,0 +1,45 @@
+<div class="calc">
+    <table class="calculator">
+        <tr>
+            <td colspan="10">
+                <input id="display" value="0" maxlength="25" [(ngModel)]="display">
+            </td>
+        </tr>
+        <tr>
+            <td><input #clear type="button" class="btnTop" value="C" (click)="clearDisplay()"></td>
+            <td><input type="button" class="btnTop" value="Del" (click)="deleteChar()"></td>
+            <td><input type="button" class="btnTop" value="=" (click)="calculate()"></td>
+            <td><span class="brand">Lenovo</span></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="math" value="&radic;" (click)="squareRoot()"></td>
+            <td><input type="button" class="math" value="x&#50;" (click)="square()"></td>
+            <td><input type="button" class="math" value="%" (click)="percentage()"></td>
+            <td><input #divide type="button" class="math" value="/" (click)="addChar(divide.value)"></td>
+        </tr>
+        <tr>
+            <td><input #seven type="button" class="btnNo" value="7" (click)="addChar(seven.value)"></td>
+            <td><input #eight type="button" class="btnNo" value="8" (click)="addChar(eight.value)"></td>
+            <td><input #nine type="button" class="btnNo" value="9" (click)="addChar(nine.value)"></td>
+            <td><input #multiply type="button" class="math" value="*" (click)="addChar(multiply.value)"></td>
+        <tr>
+            <td><input #four type="button" class="btnNo" value="4" (click)="addChar(four.value)"></td>
+            <td><input #five type="button" class="btnNo" value="5" (click)="addChar(five.value)"></td>
+            <td><input #six type="button" class="btnNo" value="6" (click)="addChar(six.value)"></td>
+            <td><input #add type="button" class="math" value="+" (click)="addChar(add.value)"></td>
+        </tr>
+        <tr>
+            <td><input #one type="button" class="btnNo" value="1" (click)="addChar(one.value)"></td>
+            <td><input #two type="button" class="btnNo" value="2" (click)="addChar(two.value)"></td>
+            <td><input #three type="button" class="btnNo" value="3" (click)="addChar(three.value)"></td>
+            <td><input #subtract type="button" class="math" value="-" (click)="addChar(subtract.value)">
+            </td>
+        </tr>
+        <tr>
+            <td><input #zero type="button" class="btnNo" value="0" (click)="addChar(zero.value)"></td>
+            <td><input #dot type="button" class="btnNo" value="." (click)="addChar(dot.value)"></td>
+            <td><input #open type="button" class="math" value="(" (click)="addChar(open.value)"></td>
+            <td><input #close type="button" class="math" value=")" (click)="addChar(close.value)"></td>
+        </tr>
+    </table>
+</div>
