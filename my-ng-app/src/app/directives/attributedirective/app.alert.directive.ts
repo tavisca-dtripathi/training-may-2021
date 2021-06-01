@@ -11,7 +11,6 @@ export class AlertDirective {
     // method for logic
     private applyColor(color: string): void {
         // defining a new renderingn of the HTML element by applying
-        // the backgroundColor style
         this.renderer.setStyle(this.ele.nativeElement, 'border-color', color);
     }
 

@@ -10,6 +10,7 @@ import { ColorDirective } from './directives/attributedirective/app.color.direct
 import { AlertDirective } from './directives/attributedirective/app.alert.directive';
 import './lit-element/app.litelement';
 import { LitElementComponent } from './lit-element/litelement.component';
+import { MyInputComponentComponent } from './my-input-component/my-input-component.component';
 
 // The AppModule class is decoared with @NgModule, to set the behavior of AppMOdule as 'Angular-MOdule'
 // aka 'the container for all Angular Standard object'
@@ -17,7 +18,7 @@ import { LitElementComponent } from './lit-element/litelement.component';
 @NgModule({
   declarations: [
     AppComponent, ProductComponent, DropDownComponent,
-     ProductFormComponent, ColorDirective,AlertDirective,LitElementComponent
+     ProductFormComponent, ColorDirective,AlertDirective,LitElementComponent, MyInputComponentComponent
   ],
    
   imports: [
@@ -26,6 +27,6 @@ import { LitElementComponent } from './lit-element/litelement.component';
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
-  bootstrap: [ProductFormComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

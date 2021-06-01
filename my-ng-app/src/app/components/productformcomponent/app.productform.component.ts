@@ -11,6 +11,7 @@ import { CustomValidator } from "./app.custom.validator";
 })
 export class ProductFormComponent implements OnInit {
     product: Product;
+    placeholderValue:string; 
     products: Array<Product>;
     private logic: ProductLogic;
     // save these constants into local public properties so that they can be used for databinding
@@ -27,6 +28,7 @@ export class ProductFormComponent implements OnInit {
         this.logic = new ProductLogic();
         this.columnHeaders = new Array<string>();
         this.color = '';
+        this.placeholderValue = 'MyCustomInputBox';
 
         // instantiate the FormGroup and map it with the Model class using FormContol and validation rules
         //  'ProductRowId': new FormControl(this.product.ProductRowId)
